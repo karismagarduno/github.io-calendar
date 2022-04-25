@@ -1,0 +1,84 @@
+*{box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: 'Italiana', serif; color: black}
+.calender-body{
+    display:grid;
+    background-color: rgb(239, 239, 241);
+    width:50%;
+    height:100%;
+    margin:auto;  
+}
+
+.calendar-weekDays{
+   display:grid;
+   padding:1%;
+    grid-template-columns: repeat(7,1fr);
+    color:darkslategrey;
+    column-gap:5%;
+    background-color: rgb(220, 220, 220);
+    font-size: 1.5rem;
+    text-align:center;      
+}
+
+.calendar-monthDays{
+    display:grid;
+    padding: 3%;
+    grid-template-columns: repeat(7,1fr);
+    color:darkslategrey;
+    column-gap:4%;
+    row-gap: 10px;
+    font-size: 1.5rem;
+    text-align:center;
+    
+    
+    
+}
+
+.monthname{
+    background-image: url("images/flowers.png");
+    color: black;
+    padding:0;
+    width:50%;
+    margin-top:2%;
+    margin-left:25%;
+    margin-right: 25%;
+    
+        
+}
+
+
+
+h1{
+    
+    font-size:2rem;
+    padding:5%;
+    margin-bottom:-2%;
+    text-align:center;
+}
+
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.prevMonth{
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+    font-size: 18px;
+    ;
+}
+
+.nextMonth{
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+    font-size: 18px;
+}
+.prevMonth , .nextMonth{
+    padding:5px;
+   margin: 0 auto;
+   width: 350px; 
+   text-align: center;
+}
